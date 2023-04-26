@@ -1,0 +1,606 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  background-color: #c9deec;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  color: initial;
+  text-decoration: initial;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.box {
+  width: 380px;
+  background-color: #ecc9e2;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* 第一張+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.top {
+  background-image: url(../dist/mypic2.jpg);
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* .top .tag {
+  width: 25px;
+  height: 50px;
+  background-color: #a54aa5;
+  float: right;
+  margin-right: 20px;
+} */
+
+.top .name {
+  position: absolute;
+  margin: 0;
+  left: 0px;
+  bottom: 0px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.top .name .smallText {
+  font-size: 14px;
+}
+
+
+.cirbutton {
+  width: 110px;
+  height: 110px;
+  background-image: url(../dist/mypic3.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: -135px;
+}
+
+.cirbutton:hover {
+  width: 110px;
+  height: 110px;
+  background-image: url(../dist/hello.png);
+  background-size: cover;
+}
+
+.bottom {
+  background-image: url(https://www.shutterstock.com/image-photo/recycled-craft-paper-background-light-260nw-520979932.jpg);
+  background-size: cover;
+  padding: 10px 20px 20px 20px;
+
+}
+
+
+/* 原本的第二張但我移到第三張了+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.top2 {
+  background-image: url(https://www.topnutritionals.ca/wp-content/uploads/2023/04/lee-yan-3DsjvB734KU-unsplash.jpg);
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.bottom2 {
+  background-image: url(https://www.shutterstock.com/image-photo/recycled-craft-paper-background-light-260nw-520979932.jpg);
+  background-size: cover;
+  height: 165px;
+  padding: 10px 20px 20px 20px;
+}
+
+.h2{
+  text-align:center;
+  vertical-align: middle;
+}
+
+.h3{
+  text-align:center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+.p3word{
+  position: absolute;
+  left: 3px;
+  top: 295px;
+  color: #eee;
+  font-weight: lighter;
+}
+
+
+.cirbutton2 {
+  width: 80px;
+  height: 80px;
+  background-image: url(../dist/slideright.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  
+}
+
+.cirbutton2-2 {
+  width: 80px;
+  height: 80px;
+  background-image: url(../dist/takeBycam.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 125px;
+  bottom: 15px;
+}
+
+.tag2{
+  width: 160px;
+  height: 30px;
+  left: 0px;
+  background-color: #2a342e;
+  position: absolute;
+  float: inline-end;
+  bottom: 35px;
+}
+
+.tag2-2{
+  width: 280px;
+  height: 50px;
+  left: 0px;
+  top: 280px;
+  background-color: #ffffff;
+  opacity: 20%;
+  position: absolute;
+  float: inline-end;
+  bottom: 35px;
+}
+
+/* 原本的第三張但我移到第四張了++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=++++*/
+.toppp {
+  background-image: url(../dist/379788.jpg);
+  background-size: cover;
+  height: 160px;
+  position: relative;
+  transition: 0.5s;
+  top: 10px;
+
+}
+
+.toppp:hover{
+  background-image: url(../dist/blackboy.png);
+ 
+}
+
+.center {
+  background-image: url(../dist/goldenman.jpg);
+  background-size: cover;
+  height: 160px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.center:hover{
+  background-image: url(../dist/blackgoldenman.png);
+}
+
+.bottommm {
+  background-image: url(../dist/379787.jpg);
+  background-size: cover;
+  height: 160px;
+  position: relative;
+  transition: 0.5s;
+  bottom: 10px;
+}
+
+.bottommm:hover{
+  background-image: url(../dist/blacksis.png)
+}
+
+/* 原本的第四張但我移到第五張了 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=++++*/ 
+
+
+.top4 {
+  background-image: url(../dist/tamsuiafternoon.jpg);
+  background-size: cover;
+  height: 140px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.top4:hover {
+  background-image: url(../dist/blacktamsuiafternoon.png);
+  background-size: cover;
+  height: 140px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bottom4 {
+  background-image: url(../dist/landscape.jpg);
+  background-size: cover;
+  height: 140px;
+  position: relative;
+  transition: 0.5s;
+  top: 50px;
+}
+
+.bottom4:hover {
+  background-image: url(../dist/blacklandscape.png);
+  background-size: cover;
+  height: 140px;
+  position: relative;
+  transition: 0.5s;
+  top: 50px;
+}
+
+.tag4{
+  width: 380px;
+  height: 50px;
+  position: absolute;
+  float: inline-end;
+  bottom: 140px;
+  background-color: #ecc9e2;
+  opacity: 100%;
+}
+
+.tag4-5{
+  width: 380px;
+  height: 50px;
+  position: absolute;
+  float: inline-end;
+  top: 140px;
+  background-color: #eee;
+  opacity: 50%;
+}
+
+.name4 {
+  position: absolute;
+  margin: 0;
+  left: 100px;
+  bottom: 140px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 300;
+}
+
+
+/* 原本的第五張但我移到第二張了 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=++++*/ 
+
+.top5 {
+  background-image: url(https://play-lh.googleusercontent.com/Ekb-ZjZg5G8rtxd8B334wF6iGKXfqLvpjQC1_drwqxorGBnWLAmMe-0ZzI_2dSXmlwY);
+  background-size: cover;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.bottom5 {
+  background-image: url(https://www.shutterstock.com/image-photo/recycled-craft-paper-background-light-260nw-520979932.jpg);
+  background-size: cover;
+  height: 165px;
+  padding: 10px 20px 20px 20px;
+}
+
+.h2{
+  text-align:center;
+  vertical-align: middle;
+}
+
+.h3{
+  text-align:center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+
+.cirbutton5 {
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  
+}
+
+.cirbutton5-2:hover {
+  width: 80px;
+  height: 80px;
+  background-image: url(../dist/an.png);
+  background-size: cover;
+}
+
+.cirbutton5-2 {
+  width: 80px;
+  height: 80px;
+  background-image: url(https://pbs.twimg.com/profile_images/1272875599569096706/gIr0v8xi_400x400.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 125px;
+  bottom: 15px;
+}
+
+.tag5{
+  width: 160px;
+  height: 30px;
+  left: 0px;
+  background-color: #f7d275;
+  position: absolute;
+  float: inline-end;
+  bottom: 35px;
+}
+
+/* 第六張++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.top6 {
+  background-image: url(../dist/ntuvwsi.jpg);
+  background-size: contain;
+  background-position: 70%;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bottom6 {
+  background-image: url(https://www.shutterstock.com/image-photo/recycled-craft-paper-background-light-260nw-520979932.jpg);
+  background-size: cover;
+  height: 165px;
+  padding: 10px 20px 20px 20px;
+}
+
+.h2{
+  text-align:center;
+  vertical-align: middle;
+}
+
+.h3{
+  text-align:center;
+  vertical-align: middle;
+  line-height: 35px;
+}
+
+
+.cirbutton6 {
+  width: 80px;
+  height: 80px;
+  background-image:url(../dist/pingxi.png) ;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: 15px;
+  
+}
+
+
+.cirbutton6-2 {
+  width: 80px;
+  height: 80px;
+  background-image: url(../dist/wintervaca.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 125px;
+  bottom: 15px;
+}
+
+.tag6{
+  width: 160px;
+  height: 30px;
+  left: 0px;
+  background-color: #4988b5;
+  position: absolute;
+  float: inline-end;
+  bottom: 35px;
+}
+
+/* 第七張++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.top7 {
+  background-image: url(../dist/g3.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bottom7 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0Gzfir8TFhk4hG3aReXksEVI4an1tf50EA&usqp=CAU);
+  background-size: cover;
+  height: 165px;
+  padding: 10px 20px 20px 20px;
+}
+
+.tag7{
+  width: 100px;
+  left: 0px;
+  height: 30px;
+  background-color: #edcd51;
+  position: absolute;
+  top: 10px;
+  float: inline-end;
+}
+
+.tag7-2{
+  width: 30px;
+  right: 10px;
+  height: 100px;
+  background-color: #51d3ed;
+  position: absolute;
+  top: 0px;
+  float: inline-end;
+}
+
+
+
+
+
+
+
+
+
+.bottom li {
+  padding: 5px 0px;
+}
+
+.bottom h3 {
+  display: inline-block;
+  margin: 0;
+}
+
+.bottom ul {
+  list-style: none;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  letter-spacing: 2px;
+}
+
+.btnWebsite {
+  background-color: #a19e0f;
+  color: white;
+  transition: 0.5s;
+}
+
+.btnWebsite:hover {
+  background-color: #ff9860;
+}
+
+.btnNews {
+  border: solid 1px black;
+  float: right;
+}
+
+.btnNews:hover {
+  background-color: #eee;
+}
+
+
+.swiper {
+  width: 580px;
+  height: 580px;
+}
+
+.swiper-slide {
+  position: relative;
+  background-color: #b283ab;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background: linear-gradient(to right, #5fb4d9, #999cc9, #d77cc3);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper button {
+  width: -200px;
+  height: -200px;
+  color: #d7c8c8;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: opacity 0.25s;
+}
+
+.swiper button:hover {
+  opacity: 0.8;
+}
+
+.swiper button::before, .swiper button::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.swiper-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  isolation: isolate;
+  padding: 50px 25px 25px;
+  color: #fff;
+}
+
+.swiper-description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.8) 50%);
+}
+
+.swiper-description h2 {
+  font-size: 42px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.swiper-description p {
+  font-size: 14px;
+  max-width: 50%;
+  margin-bottom: 15px;
+}

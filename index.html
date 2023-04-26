@@ -1,0 +1,163 @@
+
+<html>
+  <head> 
+    <link rel="stylesheet" href="week7_1.css"/>
+    <!-- Swiper CSS顯示格式 -->
+    <link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div id="app">
+      <div class="swiper carousel">
+        <div class="swiper-wrapper">
+
+<!-- 第一張 -->
+          <figure class="swiper-slide" v-for="(card,id) in cards">
+            <div class="box"> 
+              <div class="top"> 
+                <h2 class="name"> {{card.title}} <span class="smalltext">410730302</span></h2>
+                <div class="tag"> 
+                  <div class="cirbutton"> </div>
+                </div>
+              </div>
+              <div class="bottom">       
+                <ul> 
+                  <li> 
+                    <h3>校系：</h3> {{card.address}}
+                  </li>
+                  <li> 
+                    <h3>興趣： </h3> {{card.tel}}
+                  </li>
+                  <li> 
+                    <h3>綽號： </h3> {{card.opentime}} 
+                  </li>
+                </ul>
+                <div class="buttons"> 
+                    <input type="button" value="My Facebook" onclick="location.href='https://www.facebook.com/profile.php?id=100009349656401'" >
+                </div>
+              </div>
+            </div>
+          </figure>
+
+
+<!-- 原本的第五張但我移到第二張了 -->
+
+          <figure class="swiper-slide" v-for="(card,id) in cards5">
+            <div class="box"> 
+              <div class="top5"> </div>
+              <div class="bottom5"> 
+                <h2 class="h2">作品集：2D繪圖與動畫製作</h2> 
+                <h3 class="h3">主題：周興哲「愛我的時候」音樂動畫</h3> 
+                <div class="cirbutton5"> </div>
+                  <input type="button" value="動畫連結" style="position: absolute; left: 282px; bottom: 45px; background-color: rgb(231, 214, 183); border: 0px; border-radius: 5px;" onclick="location.href='https://youtu.be/DMLYwdXwTQ0'" >
+                <div class="cirbutton5-2"> </div>
+                <div class="tag5"></div>
+              </div>
+            </div>
+          </figure>          
+
+<!-- 原本的第二張但我移到第三張了 -->
+          <figure class="swiper-slide" v-for="(card,id) in cards2">
+            <div class="box"> 
+              <div class="top2"> </div>
+              <div class="bottom2"> 
+                <h2 class="h2">作品集：攝影與視覺傳達</h2> 
+                <h3 class="h3">主題：淡水小金人＆其他作品</h3> 
+                <div class="cirbutton2"> </div>
+                <div class="cirbutton2-2"> </div>
+                <div class="tag2"></div>
+                <div class="tag2-2"></div>
+                  <h4 class="p3word">下面兩頁的作品，滑鼠懸浮會有文字說明！</h4>
+              </div>
+            </div>
+          </figure>
+
+
+<!-- 原本的第三張但我移到第四張了 -->
+
+
+          <figure class="swiper-slide" v-for="(card,id) in cards3">
+            <div class="box"> 
+              <div class="toppp"> 
+                <h2 class="name"> {{card.title}} </h2>
+                <!-- <div class="tagg"> 
+                </div> -->
+              </div>
+              <div class="center">
+              </div>
+              <div class="bottommm">       
+                <div class="buttons"> 
+                </div>
+              </div>
+            </div>
+          </figure>
+
+
+<!-- 原本的第四張但我移到第五張了 -->
+
+
+          <figure class="swiper-slide" v-for="(card,id) in cards4">
+            <div class="box"> 
+              <div class="top4"> 
+                <div class="tag4"> </div>
+                <h2 class="name4">「淡水夕陽」</h2>
+                <div class="tag4-5"></div>
+              </div>
+              <div class="bottom4">
+                <h2 class="name4">「宜蘭の湖」</h2>
+              </div>
+            </div>
+          </figure>
+
+
+<!-- 第六張 -->
+          <figure class="swiper-slide" v-for="(card,id) in cards6">
+            <div class="box"> 
+              <div class="top6"> </div>
+              <div class="bottom6"> 
+                <h2 class="h2">社團活動：舉辦寒暑假職業體驗營</h2> 
+                <h3 class="h3">平溪國中的可愛小孩</h3> 
+                <div class="cirbutton6"> </div>
+                <div class="cirbutton6-2"> </div>
+                <div class="tag6"></div>
+              </div>
+            </div>
+          </figure>
+
+<!-- 第七張 -->
+          <figure class="swiper-slide" v-for="(card,id) in cards7">
+            <div class="box"> 
+              <div class="top7"> 
+                <h2 class="name"> {{card.title}} </h2> 
+              </div>
+              <div class="bottom7">
+                <h4 class="h3">2023年寒假營隊，這幾位小朋友是我帶的組別，他們總是非常積極地參與活動，認真聆聽課程內容，謝謝他們帶給我這麼棒的回憶，希望大家每天都很開心，祝福你們未來一切順利！</h2>       
+                <div class="tag7"></div>
+                <div class="tag7-2"></div>
+                </div>
+            </div>
+          </figure>
+
+                    
+
+
+
+
+
+
+        </div>
+        <button type="button" class="swiper-button-next"></button>
+        <button type="button" class="swiper-button-prev"></button>
+        <div class="swiper-pagination"></div>
+      </div>  
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.8/vue.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="week7.js"></script>
+		<!-- Initialize Swiper -->
+  </body>
+</html>
